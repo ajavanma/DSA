@@ -12,6 +12,7 @@ class ListNode:
 class MergeLinkedLists:
     @staticmethod
     def merge(list1, list2):
+    # def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         # A dummy node to simplify the merging process
         dummy = ListNode(0)
         tail = dummy
