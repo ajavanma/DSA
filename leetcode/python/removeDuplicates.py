@@ -23,13 +23,9 @@ from typing import List
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        if not nums:
-            return 0
-        
-        i = 0  # unique number Pointer
-        for j in range(1, len(nums)):
-            if nums[j] != nums[i]:
-                i += 1
-                nums[i] = nums[j]
-        # Return the length of the array without duplicates (i is 0-based)
-        return i + 1  
+        j = 1   # unique number Pointer
+        for i in range(1, len(nums)):
+            if nums[i] != nums[i - 1]:
+                nums[j] = nums[i]
+                j += 1
+        return j
