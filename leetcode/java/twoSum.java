@@ -5,7 +5,7 @@ package leetcode.java;
 import java.util.HashMap;
 
 class TwoSum {
-    public int[] solution(int[] nums, int target) {
+    public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
@@ -15,7 +15,7 @@ class TwoSum {
             map.put(nums[i], i);
         }
         // throw new IllegalArgumentException("No two sum solution");
-        
+
         // Since the problem statement guarantees that a solution exists,
         // this line should never be executed. It is just here to replace the exception.
         System.out.println("No two sum solution found.");
