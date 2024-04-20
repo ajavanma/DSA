@@ -8,10 +8,10 @@ class Solution:
 
         # reverse the int
         original = x
-        reversed_number = 0
+        reversed = 0
         while x != 0:
             digit = x % 10
-            reversed_number = reversed_number * 10 + digit
+            reversed = reversed * 10 + digit
             x //= 10
 
-        return original == reversed_number
+        return original == reversed
