@@ -2,7 +2,7 @@
 // If there is no common prefix, return an empty string "".
 package leetcode.java;
 
-class longestCommonPrefix {
+class LongestCommonPrefix {
     public String solution(String[] strs) {
         if (strs.length == 0)
             return "";
