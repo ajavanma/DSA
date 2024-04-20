@@ -31,7 +31,7 @@ class Solution {
                 nums[i] = nums[j];
             }
         }
-        // Return the length of the array without duplicates
-        return i + 1; // The index i is 0-based, hence the +1
+        // Return the length of the array without duplicates (i is 0-based)
+        return i + 1; 
     }
 }
