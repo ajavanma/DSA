@@ -19,7 +19,7 @@ class convertArrayToBinarySearchTree {
         }
         
         int mid = left + (right - left) / 2;        // Find the middle element
-        TreeNode node = new TreeNode(nums[mid]);
+        TreeNode node = new TreeNode(nums[mid]);    // to read the nums, it has to be passed in (unlike python)
         node.left = convert(nums, left, mid - 1);   // Recursively construct the left subtree
         node.right = convert(nums, mid + 1, right); // Recursively construct the right subtree
         return node;
