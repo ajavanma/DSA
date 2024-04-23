@@ -1,8 +1,7 @@
 package java.binaryTree;
 
-// Given an integer array nums where the elements are sorted in ascending order, convert it to a 
-// height-balanced (A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.)
-//  binary search tree.
+// Given an integer array (nums) where the elements are sorted in ascending order, convert it to a height-balanced* binary search tree.
+//  * A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
 
 class convertArrayToBinarySearchTree {
     public TreeNode sortedArrayToBST(int[] nums) {
@@ -19,7 +18,7 @@ class convertArrayToBinarySearchTree {
             return null;
         }
         
-        int mid = left + (right - left) / 2;                 // Find the middle element
+        int mid = left + (right - left) / 2;        // Find the middle element
         TreeNode node = new TreeNode(nums[mid]);
         node.left = convert(nums, left, mid - 1);   // Recursively construct the left subtree
         node.right = convert(nums, mid + 1, right); // Recursively construct the right subtree
