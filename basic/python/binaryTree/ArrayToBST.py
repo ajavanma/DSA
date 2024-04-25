@@ -20,7 +20,7 @@ class convertArrayToBinarySearchTree:
             if left > right:
                 return None
             
-            mid = (left + right) // 2     # // is floor division; / results in float
+            mid = (left + right) // 2     # // is floor division; / results in float; Python has built-in big integer support, which means it can handle large integers automatically without overflow
             node = TreeNode(nums[mid])   # nums is written from the outer functions (not possible in java) 
             node.left = _convert(left, mid - 1)
             node.right = _convert(mid + 1, right)

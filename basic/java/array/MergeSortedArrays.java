@@ -14,14 +14,19 @@ public class MergeSortedArrays {
 
    // n is length of arr1
    // m is length of arr2
-   public int[] merge(int[] arr1, int[] arr2, int n, int m) {
+   // public int[] merge(int[] arr1, int[] arr2, int n, int m) {
+
+   public int[] merge(int[] arr1, int[] arr2) {
+
+      int n = arr1.length, m = arr2.length;
       int[] result = new int[n + m];
-      // traverse arr1
-      int i = 0; 
-      // traverse arr2
-      int j = 0; 
-      // traverse result
-      int k = 0; 
+
+      // i to traverse arr1
+      int i = 0, j = 0, k = 0;
+      // j to traverse arr2
+      // int j = 0; 
+      // k to traverse result
+      // int k = 0; 
 
       // check them against each other, whichever is smaller, use it in the result, increment the index used
       // boundary conditions
@@ -75,7 +80,7 @@ public class MergeSortedArrays {
       msa.printArray(arr1);
       msa.printArray(arr2);
 
-      int[] result = msa.merge(arr1, arr2, arr1.length, arr2.length);
+      int[] result = msa.merge(arr1, arr2);
       msa.printArray(result);
    }
 
