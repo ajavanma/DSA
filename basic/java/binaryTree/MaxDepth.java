@@ -16,42 +16,42 @@ class MaxDepth {
     }
 }
 
-//
-// Definition for a binary tree node:
-//
-// first variant: Standalone TreeNode
-public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    // Provides three constructors to create instances in different ways:
-    //  without parameters (using default values), 
-    //  with a specific value, 
-    //  with specific value and links to left and right child nodes.
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+// //
+// // Definition for a binary tree node:
+// //
+// // first variant: Standalone TreeNode
+// public class TreeNode {
+//     int val;
+//     TreeNode left;
+//     TreeNode right;
+//     // Provides three constructors to create instances in different ways:
+//     //  without parameters (using default values), 
+//     //  with a specific value, 
+//     //  with specific value and links to left and right child nodes.
+//     TreeNode() {}
+//     TreeNode(int val) { this.val = val; }
+//     TreeNode(int val, TreeNode left, TreeNode right) {
+//         this.val = val;
+//         this.left = left;
+//         this.right = right;
+//     }
+// }
 
-// second variant: Inner TreeNode
-// treenode is encapsulated within the binary tree class
-// This definition only provides a constructor to initialize the node's data;
-//  initial links to child nodes are implicitly null and must be set via the BinaryTree class methods.
-public class BinaryTree {
+// // second variant: Inner TreeNode
+// // treenode is encapsulated within the binary tree class
+// // This definition only provides a constructor to initialize the node's data;
+// //  initial links to child nodes are implicitly null and must be set via the BinaryTree class methods.
+// public class BinaryTree {
     
-    private TreeNode root;
+//     private TreeNode root;
     
-    private class TreeNode {
-        private int data; 
-        private TreeNode left;
-        private TreeNode right;
+//     private class TreeNode {
+//         private int data; 
+//         private TreeNode left;
+//         private TreeNode right;
 
-        public TreeNode(int data) {
-            this.data = data;
-        }
-    }
-}
+//         public TreeNode(int data) {
+//             this.data = data;
+//         }
+//     }
+// }
