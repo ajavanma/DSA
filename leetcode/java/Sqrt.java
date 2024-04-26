@@ -18,7 +18,7 @@ class Sqrt {
         
         while (start <= end) {
             int mid = start + (end - start) / 2;
-            int squared = mid * mid;
+            long squared = mid * mid;
             
             if (squared == x) {
                 return (int) mid;
