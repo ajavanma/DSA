@@ -13,12 +13,12 @@ class Sqrt {
     public int mySqrt(int x) {
         if (x < 2) return x;
         
-        long start = 1;
-        long end = x / 2;
+        int start = 1;
+        int end = x / 2;
         
         while (start <= end) {
-            long mid = start + (end - start) / 2;
-            long squared = mid * mid;
+            int mid = start + (end - start) / 2;
+            int squared = mid * mid;
             
             if (squared == x) {
                 return (int) mid;
