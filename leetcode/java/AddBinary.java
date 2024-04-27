@@ -15,6 +15,8 @@ package leetcode.java;
 // a and b consist only of '0' or '1' characters.
 // Each string does not contain leading zeros except for the zero itself.
 
+// First, we initialize a StringBuilder object to store the sum and two integer variables 'carry' and 'i' to keep track of the carry-over value and the current position in the first binary number (a), respectively.
+// We also initialize another integer variable 'j' to keep track of the current position in the second binary number (b). Here is how the code initializes these variables:
 
 class AddBinary {
     public String addBinary(String a, String b) {
