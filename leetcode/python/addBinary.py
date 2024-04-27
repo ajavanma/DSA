@@ -13,10 +13,6 @@
 # a and b consist only of '0' or '1' characters.
 # Each string does not contain leading zeros except for the zero itself.
 
-
-# First, we initialize a StringBuilder object to store the sum and two integer variables 'carry' and 'i' to keep track of the carry-over value and the current position in the first binary number (a), respectively.
-# We also initialize another integer variable 'j' to keep track of the current position in the second binary number (b). Here is how the code initializes these variables:
-
 # It iterates over both strings from the end to the beginning. It adds the digits of a and b together with any carry from the previous addition. 
 # The sum's digit (total % 2) is added to the result list, and the carry (total // 2) is calculated for the next iteration.
 # After processing both strings and the carry, the result list is reversed to get the final binary sum in the correct order and joined into a string to return.
