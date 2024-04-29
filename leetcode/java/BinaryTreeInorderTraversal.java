@@ -14,6 +14,7 @@ class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
+    // constructor to initialize the TreeNode
     TreeNode(int x) { val = x; }
 }
 
