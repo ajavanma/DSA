@@ -12,8 +12,9 @@ package java.sort;
 //
 // ascending
 // Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. 
-// If we haven’t done a swap in an iteration, break 
+// If we haven’t done a swap in an iteration, break (the list is sorted)
 //
+
 public class BubbleSort {
    public void sort(int[] arr) {
       boolean isSwapped;
@@ -30,7 +31,7 @@ public class BubbleSort {
             }
          }
 
-         if (isSwapped == false) {  // after a complete "inner for loop" pass, if no swap was done: it means the array is already sorted
+         if (isSwapped == false) {  // after a complete "inner loop" pass, if no swap was done: it means the array is already sorted
             break;
          }
       }
