@@ -10,10 +10,9 @@ package java.sort;
 // outer for-loop takes track of the "iteration" (based on the length -1)
 // inner for-loop takes care of the "comparing and swapping"
 //
-// Repeatedly compare a pair of adjacent elements and swap them if they are in wrong order
-// If we haven’t done a swap in an iteration, break 
-//
 // ascending
+// Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. 
+// If we haven’t done a swap in an iteration, break 
 //
 public class BubbleSort {
    public void sort(int[] arr) {
