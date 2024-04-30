@@ -31,43 +31,15 @@ public class BubbleSort {
             }
          }
 
-         if (isSwapped == false) {  // after a complete "inner for loop" pass if no swap was done, it means the array is already sorted
+         if (isSwapped == false) {  // after a complete "inner for loop" pass, if no swap was done: it means the array is already sorted
             break;
          }
       }
    }
 
 
-   // #include <vector>
-   // #include <algorithm>  // For std::swap
-   //
-   // class BubbleSort {
-   // public:
-   //    void sort(std::vector<int>& arr) {
-   //       bool isSwapped;
-   //
-   //       for (int i = 0; i < arr.size() - 1; i++) {
-   //             isSwapped = false;
-   //
-   //             for (int j = 0; j < arr.size() - 1 - i; j++) {
-   //                if (arr[j] > arr[j + 1]) {
-   //                   std::swap(arr[j], arr[j + 1]);  // Using std::swap to exchange elements
-   //                   isSwapped = true;
-   //                }
-   //             }
-   //
-   //             if (!isSwapped) {  // If no two elements were swapped by inner loop, then break
-   //                break;
-   //             }
-   //       }
-   //    }
-   // };
-
-
-
    public void printArray(int[] arr) {
-      int n = arr.length;
-      for (int i = 0; i < n; i++) {
+      for (int i = 0; i < arr.length; i++) {
          System.out.print(arr[i] + " ");
       }
       System.out.println();
