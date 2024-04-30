@@ -51,11 +51,11 @@ public class BinarySearchTree {
    }
 
    // to print nodes into the console
+   // left, root, right
    public void inOrder() {
       inOrder(root);
    }
 
-   // left, root, right
    private void inOrder(TreeNode root) {
       if (root == null) {
          return;
