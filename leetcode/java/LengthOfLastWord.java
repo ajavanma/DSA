@@ -6,9 +6,12 @@ package leetcode.java;
 
 class LengthOfLastWord {
     public int lengthOfLastWord(String s) {
-        
-        String[] words = s.trim().split("\\s+");        // Remove leading and trailing spaces, then split the string by spaces, 
-                                                              // split("\\s+") : a regular expression to split the string around sequences of one or more whitespace characters
-        return words[words.length - 1].length();              // Get the last word from the array and return its length
+        String[] words = s.trim().split("\\s+");  
+        return words[words.length - 1].length();              
     }
 }
+
+// s.trim():       trims any leading or trailing whitespace from the input string
+// split("\\s+"):  uses a regular expression to split the string around sequences of one or more whitespace characters. It results in an array of words
+
+// words[words.length - 1]: accesses the last element in the array, which is the last word
