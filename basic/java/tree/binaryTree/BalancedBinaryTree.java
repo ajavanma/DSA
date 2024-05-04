@@ -4,21 +4,20 @@ package java.tree.binaryTree;
 // A height-balanced binary tree:
 //  a binary tree in which the depth of the two subtrees of every node never differs by more than one
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
+
+// public class TreeNode {
+//     int val;
+//     TreeNode left;
+//     TreeNode right;
+//     TreeNode() {}
+//     TreeNode(int val) { this.val = val; }
+//     TreeNode(int val, TreeNode left, TreeNode right) {
+//         this.val = val;
+//         this.left = left;
+//         this.right = right;
+//     }
+// }
+
 
  class BalancedBinaryTree {
     public boolean isBalanced(TreeNode root) {
