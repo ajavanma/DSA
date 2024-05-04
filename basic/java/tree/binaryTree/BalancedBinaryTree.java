@@ -26,19 +26,13 @@ package java.tree.binaryTree;
         if (node == null)  return 0;
 
         int leftHeight = checkHeight(node.left);
-        if (leftHeight == -1) {
-            return -1;
-        }
+        if (leftHeight == -1) return -1;
 
         int rightHeight = checkHeight(node.right);
-        if (rightHeight == -1) {
-            return -1;
-        }
+        if (rightHeight == -1) return -1;
 
-        if (Math.abs(leftHeight - rightHeight) > 1) {
-            return -1; // difference greater than 1 => current node is unbalanced
-        }
+        if (Math.abs(leftHeight - rightHeight) > 1) return -1;  // difference greater than 1 => current node is unbalanced
 
-        return Math.max(leftHeight, rightHeight) + 1; // Return the height of the current node
+        return Math.max(leftHeight, rightHeight) + 1;           // Return the height of the current node
     }
 }
