@@ -1,3 +1,5 @@
+import Optional
+
 # Given a binary tree, determine if it is height-balanced
 # A height-balanced binary tree:
 #  a binary tree in which the depth of the two subtrees of every node never differs by more than one
@@ -7,8 +9,6 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-
-import Optional
 
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
