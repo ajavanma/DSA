@@ -25,15 +25,14 @@ package java.tree.binaryTree;
     private int checkHeight(TreeNode node) {
         if (node == null)  return 0;
 
-        
         int leftHeight = checkHeight(node.left);
         if (leftHeight == -1) {
-            return -1; // Left subtree is unbalanced
+            return -1;
         }
 
         int rightHeight = checkHeight(node.right);
         if (rightHeight == -1) {
-            return -1; // Right subtree is unbalanced
+            return -1;
         }
 
         if (Math.abs(leftHeight - rightHeight) > 1) {
