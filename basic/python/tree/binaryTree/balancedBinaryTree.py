@@ -1,4 +1,7 @@
-# Definition for a binary tree node.
+# Given a binary tree, determine if it is height-balanced
+# A height-balanced binary tree:
+#  a binary tree in which the depth of the two subtrees of every node never differs by more than one
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
