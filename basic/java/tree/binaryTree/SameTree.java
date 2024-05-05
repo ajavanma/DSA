@@ -47,9 +47,9 @@ class TreeNode {
 //         SameTree sol = new SameTree();
         
 //         // Check if first pair of trees are the same
-//         System.out.println("Tree 1 and Tree 2 are the same: " + sol.isSameTree(node1, node2)); // Output: true
+//         System.out.println("Tree 1 and Tree 2 are the same: " + sol.isSameTree(node1, node2)); // true
         
 //         // Check if second pair of trees are the same
-//         System.out.println("Tree 3 and Tree 4 are the same: " + sol.isSameTree(node3, node4)); // Output: false
+//         System.out.println("Tree 3 and Tree 4 are the same: " + sol.isSameTree(node3, node4)); // false
 //     }
 // }
