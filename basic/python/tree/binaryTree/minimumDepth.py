@@ -5,6 +5,8 @@ from typing import Optional
 # The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 # Note: A leaf is a node with no children.
 
+# Breadth-First Search (BFS) approach. 
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -17,7 +19,7 @@ class Solution:
         if not root:
             return 0
         
-        queue = deque([(root, 1)])  # Queue of pairs (node, depth)
+        queue = deque([(root, 1)])  # "double-ended Queue" of pairs (node, depth): syntax = list of tuples
 
         while queue:
             node, depth = queue.popleft()
