@@ -25,24 +25,15 @@ class PathSum {
             return false;
         }
         
-        // Check if it is a leaf node
+        // Check if leaf
         if (root.left == null && root.right == null) {
-            // Check if the current node's value is equal to targetSum
             return root.val == targetSum;
         }
         
-        // Recursively check the left and right subtree
-        boolean leftHasPath = false;
-        if (root.left != null) {
-            leftHasPath = hasPathSum(root.left, targetSum - root.val);
-        }
+        boolean leftSum = hasPathSum(root.left, targetSum - root.val);
+        boolean rightSum = hasPathSum(root.right, targetSum - root.val);
         
-        boolean rightHasPath = false;
-        if (root.right != null) {
-            rightHasPath = hasPathSum(root.right, targetSum - root.val);
-        }
+        return leftSum || rightSum;
         
-        // Return true if any of the subtree has the path sum equal to targetSum
-        return leftHasPath || rightHasPath;
     }
 }
