@@ -19,13 +19,14 @@ class Solution:
             return targetSum == root.val
         
         # Recursively check the left and right subtree
-        left_path = self.hasPathSum(root.left, targetSum - root.val)
+        left_path = self.hasPathSum(root.left, targetSum - root.val)    # root here means the current node
         right_path = self.hasPathSum(root.right, targetSum - root.val)
         
         return left_path or right_path
 
-# Example usage:
-# Constructing the tree:
+
+# Example:
+
 #     5
 #    / \
 #   4   8
@@ -37,4 +38,4 @@ root = TreeNode(5)
 root.left = TreeNode(4, TreeNode(11, TreeNode(7), TreeNode(2)))
 root.right = TreeNode(8, TreeNode(13), TreeNode(4, None, TreeNode(1)))
 sol = Solution()
-print(sol.hasPathSum(root, 22))  # Output: True
+print(sol.hasPathSum(root, 22))  # True
