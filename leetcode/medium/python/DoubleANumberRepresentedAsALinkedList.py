@@ -13,6 +13,11 @@ from typing import Optional
 # Hence, the returned linked list reprersents the number 999 * 2 = 1998. 
 
 # recursive solution
+# insights:
+# while the recursion starts at the head, no processing (doubling) happens until the recursion reaches the base case and starts to return.
+# This means we start from the head (most significant value) but the effective processing order reversed.
+# from the least significant digit towards the most significant digit
+# Each node's new value is only set during these return steps (not during the recursive calls)
 
 class ListNode:
     def __init__(self, val=0, next=None):
