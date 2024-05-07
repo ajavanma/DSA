@@ -13,6 +13,12 @@ package leetcode.medium.java;
 // Explanation: The figure above corresponds to the given linked list which represents the number 999. 
 // Hence, the returned linked list reprersents the number 999 * 2 = 1998. 
 
+// recursive solution
+// insights:
+// while the recursion starts at the head, no processing (doubling) happens until the recursion reaches the base case and starts to return.
+// This means we start from the head (most significant value) but the effective processing order reversed.
+// from the least significant digit towards the most significant digit
+// Each node's new value is only set during these return steps (not during the recursive calls)
 
 
 public class DoubleANumberRepresentedAsALinkedList {
