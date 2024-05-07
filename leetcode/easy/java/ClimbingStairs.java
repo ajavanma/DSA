@@ -1,4 +1,4 @@
-package leetcode.java;
+package leetcode.easy.java;
 
 // You are climbing a staircase. It takes n steps to reach the top.
 

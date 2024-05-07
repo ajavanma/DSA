@@ -1,5 +1,5 @@
 // Given an integer x, return true if x is a palindrome and false otherwise.
-package leetcode.java;
+package leetcode.easy.java;
 
 class IntegerPalindrome {
     public boolean isPalindrome(int x) {

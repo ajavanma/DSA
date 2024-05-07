@@ -1,4 +1,4 @@
-package leetcode.java;
+package leetcode.easy.java;
 
 import java.util.List;
 import java.util.ArrayList;

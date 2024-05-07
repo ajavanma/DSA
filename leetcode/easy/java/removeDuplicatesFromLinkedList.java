@@ -1,15 +1,14 @@
-package leetcode.java;
+package leetcode.easy.java;
 
 class removeDuplicatesFromLinkedList {
-    private static class ListNode {
-        private int data; 
-        private ListNode next; 
-  
-        public ListNode(int data) {
-           this.data = data;
-           this.next = null;
-        }
-     }
+    
+    class ListNode {
+        int data;
+        ListNode next;
+        ListNode() {}
+        ListNode(int data) { this.data = data; }
+        ListNode(int data, ListNode next) { this.data = data; this.next = next; }
+    }
     
      
     // Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
