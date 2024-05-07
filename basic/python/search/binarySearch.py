@@ -1,5 +1,6 @@
 # only on sorted list
 # time complexity: O(log n) 
+# Divide and conquer
 
 # Iterative Binary Search
 def binary_search(list, target):
@@ -7,7 +8,8 @@ def binary_search(list, target):
     high = len(list) - 1
 
     while low <= high:
-        mid = (low + high) // 2   # Find the middle index using integer division
+        mid = low + (high - low) // 2   # Find the middle index using integer division, and avoid overflow
+        
         if list[mid] == target:
             return mid            # Target found
         elif list[mid] < target:
