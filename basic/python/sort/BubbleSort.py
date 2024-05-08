@@ -14,8 +14,10 @@
 #
 
 def bubble_sort(arr):
+    
     n = len(arr)
-    for i in range(n):
+    
+    for i in range(1, n):
         swapped = False
         for j in range(n-i-1):
             if arr[j] > arr[j+1]: # Compare neighbors
@@ -26,6 +28,6 @@ def bubble_sort(arr):
 
 # Example usage
 arr = [64, 34, 25, 12, 22, 11, 90]
+print(f"array is: \n {arr}")
 bubble_sort(arr)
-print("Sorted array is:")
-print(arr)
+print(f"Sorted array is: \n {arr}")
