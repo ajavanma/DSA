@@ -4,6 +4,10 @@ package java.sort;
 //                               best: O(n) when the array is already sorted
 // space complexity: O(1) (in-place sorting algorithm)
 
+// insights:
+// In-Place: Only requires a constant amount of memory
+// Online: Can sort a list as it receives it
+
 public class InsertionSort {
     public static void insertionSort(int[] nums) {
         for (int i = 1; i < nums.length; i++) {
