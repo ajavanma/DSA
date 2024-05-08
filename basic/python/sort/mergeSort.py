@@ -6,6 +6,10 @@
 #     merging: n
 #  space complexity: O(n)
 
+# problems: 
+# Merge sort requires an extra array in memory to merge the sorted sub arrays.
+# Merge sort requires many recursive function calls, and function calls can have significant resource overhead.
+
 def merge_sort(nums):
     
     if len(nums) <= 1:
