@@ -1,6 +1,7 @@
-package java.sort;
+// package java.sort;
+package sort;
 
-//
+
 //  time complexity:
 // average and worst  : O(n^2) 
 // best               : O(n) (when the array is already sorted)
@@ -13,15 +14,16 @@ package java.sort;
 // ascending
 // Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. 
 // If we haven’t done a swap in an iteration, break (the list is sorted)
-//
 
 public class BubbleSort {
    public void sort(int[] arr) {
+      
+      int n = arr.length;
       boolean isSwapped;
 
-      for (int i = 0; i < arr.length - 1; i++) {
+      for (int i = 1; i < n; i++) {
          isSwapped = false;
-         for (int j = 0; j < arr.length - 1 - i; j++) { // in each iteration the last number is sorted in its place, so the number of iteration is reduced by i
+         for (int j = 0; j < n - i - 1; j++) { // in each iteration the last number is already sorted in its place
             if (arr[j] > arr[j + 1]) {
                // swap
                int temp = arr[j];
@@ -36,7 +38,6 @@ public class BubbleSort {
          }
       }
    }
-
 
    public void printArray(int[] arr) {
       for (int i = 0; i < arr.length; i++) {
