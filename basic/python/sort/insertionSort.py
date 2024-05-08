@@ -3,6 +3,10 @@
 #                                best: O(n) when the array is already sorted
 #  space complexity: O(1) (in-place sorting algorithm)
 
+# insights:
+# In-Place: Only requires a constant amount of memory
+# Online: Can sort a list as it receives it
+
 def insertion_sort(nums):
     for i in range(1, len(nums)):
         j = i
