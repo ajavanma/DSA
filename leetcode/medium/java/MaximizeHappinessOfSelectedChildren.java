@@ -32,15 +32,15 @@ import java.util.Arrays;
 
 public class MaximizeHappinessOfSelectedChildren {
     public long maximumHappinessSum(int[] happiness, int k) {
-        // Sort the array in ascending order first
-        Arrays.sort(happiness);
+        
+        Arrays.sort(happiness);  // ascending order 
         
         long ans = 0;
         int n = happiness.length;
         
         // Iterate backwards to simulate descending order
         for (int i = 0; i < k && i < n; i++) {
-            int index = n - 1 - i;  // Calculate the index for descending order processing
+            int index = n - 1 - i;  // approach 1: descending indexing
             ans += Math.max(happiness[index] - i, 0);
         }
         
@@ -49,3 +49,32 @@ public class MaximizeHappinessOfSelectedChildren {
 }
 
 
+public class MaximizeHappinessOfSelectedChildren2 {
+    public long maximumHappinessSum(int[] happiness, int k) {
+        
+        Arrays.sort(happiness);  // ascending order
+        reverse(happiness);     // reverse it for descending order
+
+        long ans = 0;
+        int n = happiness.length;
+
+        for (int i = 0; i < k && i < n; i++) {
+            ans += Math.max(happiness[i] - i, 0); 
+        }
+        
+        return ans;
+    }
+
+    // Helper function to reverse an array
+    private void reverse(int[] array) {
+        int start = 0;
+        int end = array.length - 1;
+        while (start < end) {
+            int temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            start++;
+            end--;
+        }
+    }
+}
