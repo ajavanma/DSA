@@ -16,8 +16,8 @@ def merge_sort(nums):
         return nums
     
     mid = len(nums) // 2
-    left_half = merge_sort(nums[:mid])
-    right_half = merge_sort(nums[mid:])
+    left_half = merge_sort(nums[:mid])   # excluding the middle
+    right_half = merge_sort(nums[mid:])  # including the middle 
 
     return merge(left_half, right_half)
 
@@ -35,6 +35,7 @@ def merge(first, second):
             merged.append(second[j])
             j += 1
 
+    # if one of lists is shorter and exhausts first
     # If there are remaining elements in 'first', add them to 'merged'
     while i < len(first):
         merged.append(first[i])
