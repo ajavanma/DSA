@@ -1,12 +1,11 @@
-// package java.sort;
-package sort;
+package java.sort;
 
-
-//  time complexity:
-// average and worst  : O(n^2) 
-// best               : O(n) (when the array is already sorted)
+// time complexity:
+//       average and worst  : O(n^2) 
+//       best               : O(n) (when the array is already sorted)
 //
-// space complexity: O(1) (in-place sorting algorithm)
+// space complexity:
+//       O(1) (in-place sorting algorithm)
 //
 // outer for-loop takes track of the "iteration" (based on the length -1)
 // inner for-loop takes care of the "comparing and swapping"
