@@ -10,17 +10,17 @@
 # Merge sort requires an extra array in memory to merge the sorted sub arrays.
 # Merge sort requires many recursive function calls, and function calls can have significant resource overhead.
 
-def merge_sort(nums):
-    
+def sort(nums):
     if len(nums) <= 1:
         return nums
     
     mid = len(nums) // 2
-    left_half = merge_sort(nums[:mid])   # excluding the middle
-    right_half = merge_sort(nums[mid:])  # including the middle 
+    left_half = sort(nums[:mid])   # excluding the middle
+    right_half = sort(nums[mid:])  # including the middle 
 
     return merge(left_half, right_half)
 
+# this python approach has more memory overhead by creating new lists with every recursive call
 def merge(first, second):
     merged = []
     i = 0  # Index for the first list
