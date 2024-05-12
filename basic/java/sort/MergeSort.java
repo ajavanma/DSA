@@ -23,14 +23,15 @@ public class MergeSort {
          int mid = low + (high - low) / 2; 
          sort(arr, temp, low, mid);        // left is from "low" to "mid"
          sort(arr, temp, mid + 1, high);   // right is from "mid + 1" to "high"
-         merge(arr, temp, low, mid, high); // to destict between tha left and right arrays: "low" to "mid" and "mid + 1" to "high"
+         merge(arr, temp, low, mid, high); // to distinct between the left and right arrays: "low" to "mid" and "mid + 1" to "high"
       }
    }
    // mid was calculated in the sort method
    private void merge(int[] arr, int[] temp, int low, int mid, int high) {
       for (int i = low; i <= high; i++) {
-         temp[i] = arr[i];    // copy elements to temp array
-      }
+         temp[i] = arr[i];    // copy elements to temp array so that we don't overwrite it
+      }                       // then use temp[i] and temp[j] to populate the arr[k]
+   // this approach uses just one auxillary arr to be used as temp instead of making new lists in eah recursive call like the python approach
 
       int i = low;      // index to traverse left sorted sub-array
       int j = mid + 1;  // traverse right sorted sub-array
