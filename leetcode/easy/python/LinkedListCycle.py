@@ -4,6 +4,7 @@
 
 # Return true if there is a cycle in the linked list. Otherwise, return false.
 
+from typing import Optional
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
