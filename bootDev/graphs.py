@@ -17,7 +17,7 @@
 ]
 
 
-ADJACENCY MATRIX
+# ADJACENCY MATRIX
 # An adjacency matrix is a square matrix used to represent a finite graph. 
 # The elements of the matrix indicate whether pairs of vertices are adjacent or not in the graph. 
 # true indicates the presence of an edge, false represents the absence.
