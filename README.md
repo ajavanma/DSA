@@ -1,1 +1,1 @@
-# DSA
+Data structure and algorithms (basics, leetcode, boot.dev)
