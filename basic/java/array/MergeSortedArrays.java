@@ -1,16 +1,15 @@
 package java.array;
 
-// merge two sorted arrays in an array that is also sorted
+// merge two sorted arrays in an array that is also sorted (ascending)
 // time complexity: O(n + m) 
 // space complexity: O(n + m) 
-// for space complexity we focus on the additional space required
+
+// direct merging into a new array: result array
+
+// out-of-place merge: it creates a new array to hold the merged result
+//  without modifying the originals
 
 public class MergeSortedArrays {
-
-   // direct merging into a new array: result array
-   
-   // out-of-place merge: it creates a new array to hold the merged result
-   //  without modifying the originals
 
    // n is length of arr1
    // m is length of arr2
@@ -22,13 +21,12 @@ public class MergeSortedArrays {
       int[] result = new int[n + m];
 
       // i to traverse arr1
-      int i = 0, j = 0, k = 0;
       // j to traverse arr2
-      // int j = 0; 
       // k to traverse result
-      // int k = 0; 
+      int i = 0, j = 0, k = 0;
 
-      // check them against each other, whichever is smaller, use it in the result, increment the index used
+      // check them against each other, whichever is smaller, use it in the result
+      // then increment the index used
       // boundary conditions
       while (i < n && j < m) { 
          if (arr1[i] < arr2[j]) { 
@@ -43,9 +41,8 @@ public class MergeSortedArrays {
          k++;
       }
 
-      // for the case if one array is exhausted
-      //  put the rest of the other into the result
-      // arr2 got exhausted first
+      // if one array is exhausted, put the rest of the other arr into the result
+      // if arr2 got exhausted first
       while (i < n) { 
          // storing rest of the arr1 elements into result array
          result[k] = arr1[i]; 

@@ -1,3 +1,7 @@
+# merge two sorted arrays in an array that is also sorted (ascending)
+# time complexity: O(n + m) 
+# space complexity: O(n + m) 
+
 # direct merging into a new array: result array
 
 # out-of-place merge: it creates a new array to hold the merged result
