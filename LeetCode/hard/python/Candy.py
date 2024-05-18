@@ -6,6 +6,8 @@
 # Children with a higher rating get more candies than their neighbors.
 # Return the minimum number of candies you need to have to distribute the candies to the children.
 
+from typing import List
+
 class Solution:
     def candy(self, ratings: List[int]) -> int:
         n = len(ratings)
