@@ -29,7 +29,7 @@ public class ArrayUtil {
       return min;
    }
 
-   //reverse an array
+   // reverse an array
    // swap start and end iteratively
    public void reverse(int[] arr, int start, int end) {
       while (start < end) {
